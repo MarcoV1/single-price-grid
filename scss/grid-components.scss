@@ -1,0 +1,127 @@
+@import "colors.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
+.grid-wrapper {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: $b_radius;
+    overflow: hidden;
+    box-shadow: $box_shadow;
+    text-align: center;
+
+    @include tablet() {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: initial;
+    }
+
+    .grid-component {
+        padding: 2.2rem;
+        color: white;
+
+        &--join {
+            grid-column: 1 / -1;
+            color: black;
+        }
+
+        &--cta {
+            display: flex;
+            flex-direction: column;
+            background: $cyan;
+            color: $light-gray;
+            align-items: center;
+            @include tablet() {
+                align-items: initial;
+            }
+        }
+
+        &--us {
+            background: lighten($cyan, 10%);
+            color: $light-gray;
+        }
+
+        &__h1 {
+            color: $cyan;
+            font-size: 1.1rem;
+            @include tablet-landscape() {
+                font-size: 1.5rem;
+            }
+        }
+
+        &__h2 {
+            font-size: 0.9rem;
+            margin: 10px 0;
+            letter-spacing: 0.02rem;
+            @include tablet-landscape() {
+                font-size: 1.1rem;
+            }
+
+            &--join {
+                padding-top: 10px;
+                color: $bright-yellow;
+            }
+        }
+
+        &__price {
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-style: italic;
+
+            &--month {
+                margin-left: 0.5rem;
+                font-size: 0.8rem;
+                color: rgba(229, 239, 245, 0.5);
+            }
+        }
+
+        &__p {
+            font-size: 0.85rem;
+            line-height: 1rem;
+
+            &--join {
+                color: $grayish-blue;
+                margin-bottom: -7px;
+            }
+
+            @include tablet-landscape() {
+                font-size: 1rem;
+                line-height: 2rem;
+            }
+        }
+
+        &__list {
+            padding: 10px 0;
+            &-item {
+                margin: 0.3rem 0;
+                font-size: 0.9rem;
+            }
+        }
+
+        &__button {
+            text-align: center;
+            background: $bright-yellow;
+            color: white;
+            box-shadow: $box_shadow;
+            padding: 1rem 0;
+            cursor: pointer;
+            border-radius: $b_radius;
+            transition: background 1s ease;
+            margin-top: 10px;
+            border: none;
+            outline: none;
+            width: 40%;;
+            letter-spacing: 1px;
+
+            &:hover {
+                background: darken($bright-yellow, 10%);
+            }
+
+            @include tablet() {
+                width: 100%;;
+            }
+        }
+    }
+}
