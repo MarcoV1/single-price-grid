@@ -43,14 +43,14 @@
 
         &__h1 {
             color: $cyan;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             @include tablet-landscape() {
                 font-size: 1.5rem;
             }
         }
 
         &__h2 {
-            font-size: 0.9rem;
+            font-size: 1rem;
             margin: 10px 0;
             letter-spacing: 0.02rem;
             @include tablet-landscape() {
@@ -96,7 +96,7 @@
             padding: 10px 0;
             &-item {
                 margin: 0.3rem 0;
-                font-size: 0.9rem;
+                font-size: 0.85rem;
             }
         }
 
@@ -109,11 +109,12 @@
             cursor: pointer;
             border-radius: $b_radius;
             transition: background 1s ease;
-            margin-top: 10px;
+            margin-top: 11px;
             border: none;
             outline: none;
             width: 40%;;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
+            font-size: 0.95rem;
 
             &:hover {
                 background: darken($bright-yellow, 10%);

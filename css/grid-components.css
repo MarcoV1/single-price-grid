@@ -30,12 +30,12 @@
       color: #e5eff5; }
     .grid-wrapper .grid-component__h1 {
       color: #2ab2af;
-      font-size: 1.1rem; }
+      font-size: 1.2rem; }
       @media only screen and (min-width: 900px) {
         .grid-wrapper .grid-component__h1 {
           font-size: 1.5rem; } }
     .grid-wrapper .grid-component__h2 {
-      font-size: 0.9rem;
+      font-size: 1rem;
       margin: 10px 0;
       letter-spacing: 0.02rem; }
       @media only screen and (min-width: 900px) {
@@ -68,7 +68,7 @@
       padding: 10px 0; }
       .grid-wrapper .grid-component__list-item {
         margin: 0.3rem 0;
-        font-size: 0.9rem; }
+        font-size: 0.85rem; }
     .grid-wrapper .grid-component__button {
       text-align: center;
       background: #c0df34;
@@ -78,10 +78,12 @@
       cursor: pointer;
       border-radius: 5px;
       transition: background 1s ease;
-      margin-top: 10px;
+      margin-top: 11px;
       border: none;
       outline: none;
-      width: 40%; }
+      width: 40%;
+      letter-spacing: 1.5px;
+      font-size: 0.95rem; }
       .grid-wrapper .grid-component__button:hover {
         background: #a4c21e; }
       @media (min-width: 750px) {
